@@ -45,6 +45,10 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10
 ```
+ ![Top Paying Roles](top_paying.png)
+- jobs with details like salary, company, location, and posting date.
+- Highest salary: $650,000 (Data Analyst at Mantys).
+
 
 
 ### 2. Skills for Top Paying Jobs
@@ -77,10 +81,13 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC 
 ```
+![Top Paying Skills](top_paying_skills.png)
 - SQL and Python are the most in-demand skills, appearing in nearly all high-paying data analyst roles.
 - Tableau is the leading visualization tool, ranking third.
 - R is still relevant, though less demanded than Python.
 - Cloud & Database technologies like Snowflake and Azure are becoming more popular.
+
+
 
 
 ### 3. In-Demand Skills for Data Analysis
@@ -100,6 +107,10 @@ ORDER BY
     demand_count DESC
 LIMIT 5 
 ```
+![Most in-Demand Skills](most_in_demand.png)
+- 5 skills with the highest demand (SQL, Excel, Python, Tableau, Power BI).
+- SQL leads with 92,628 job postings.
+
 
 ### 4. Skills Based on Salary
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
@@ -119,6 +130,8 @@ ORDER BY
     avg_salary DESC
 LIMIT 50 
 ```
+- 50 skills ranked by average salary.
+- Highest paying skill: SVN ($400,000 avg.).
 
 ### 5. Most Optimal Skills to Learn
 Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a stratagic focus for skills development.
@@ -164,6 +177,9 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 ```
+![Most Optimal Skills To Learns](most_optimal.png)
+- Skills balancing demand and salary.
+- Example: Kafka ($129,999, 40 job postings).
 # What I Learned
 
 Throughout this adventure, I've turbocharged any SQL toolkit with some serious firepower:
